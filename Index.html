@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Undangan Pernikahan</h1>
+      <p>Kami mengundang Anda untuk merayakan hari bahagia kami</p>
+    </div>
+    <div class="content">
+      <h2>Farhan & Agista</h2>
+      <p>Kepada Yth: <span id="Ignatius Aditya">Tamu Undangan</span></p>
+      <p>Dengan penuh cinta dan hormat, kami berharap kehadiran Anda.</p>
+    </div>
+    <div class="details">
+      <p><strong>Tanggal:</strong> 17 Desember 2025</p>
+      <p><strong>Lokasi:</strong> Dimana ya</p>
+    </div>
+    <!-- Audio Player dengan autoplay dan tanpa kontrol -->
+    <audio id="wedding-audio" loop>
+      <source src="Batas Senja - Nanti Kita Seperti Ini.mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung pemutar audio.
+    </audio>
+  </div>
+
+  <script>
+    window.onload = function() {
+      var audio = document.getElementById('wedding-audio');
+      audio.play().catch(function(error) {
+        console.log("Autoplay tidak diizinkan:", error);
+      });
+    };
+  </script>
+</body>
+</html>
