@@ -1,32 +1,26 @@
 body {
-  font-family: 'Georgia', serif;
   margin: 0;
   padding: 0;
-  text-align: center;
-  background-color: #faf3e0;
-  color: #5b4a3c;
+  font-family: Arial, sans-serif;
 }
 
 .container {
-  padding: 200px;
-  background: url('rustic.jpg') no-repeat center center;
-  background-size: cover;
+  padding-top: 50px; /* Menambahkan ruang di bagian atas */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header {
+  text-align: center;
   margin-bottom: 30px;
 }
 
-h1 {
-  color: #8b5a2b;
+.content {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .details {
-  margin: 20px auto;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 30px;
 }
