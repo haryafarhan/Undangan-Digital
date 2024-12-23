@@ -22,16 +22,19 @@
       <p><strong>Lokasi:</strong> Dimana ya</p>
     </div>
     <!-- Audio Player dengan autoplay dan tanpa kontrol -->
-<audio id="wedding-audio" autoplay muted loop>
+<button id="play-audio">Play Audio</button>
+<audio id="wedding-audio" loop>
   <source src="Batas Senja - Nanti Kita Seperti Ini.mp3" type="audio/mpeg">
   Browser Anda tidak mendukung pemutar audio.
 </audio>
+
 <script>
-  window.onload = function () {
+  document.getElementById('play-audio').onclick = function () {
     var audio = document.getElementById('wedding-audio');
-    audio.muted = false; // Hapus mute setelah halaman selesai dimuat
-    audio.play().catch(function (error) {
-      console.log("Autoplay tidak diizinkan:", error);
+    audio.play().then(() => {
+      console.log("Audio mulai diputar");
+    }).catch(function (error) {
+      console.log("Gagal memutar audio:", error);
     });
   };
 </script>
